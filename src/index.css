@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, Arial, sans-serif; background: #f4f6fb; color: #1f2937; }
+.header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; padding: 12px 24px; background: #1e3a8a; }
+.brand { color: #fff; font-weight: 700; font-size: 1.25rem; text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: 4px; }
+.nav { color: #dbe4ff; text-decoration: none; padding: 6px 12px; border-radius: 6px; }
+.nav.active { background: #fff; color: #1e3a8a; }
+.container { max-width: 900px; margin: 24px auto; padding: 0 16px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
+.card { background: #fff; padding: 16px; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,.1); }
+.btn { display: inline-block; background: #2563eb; color: #fff; border: 0; padding: 8px 16px; border-radius: 6px; text-decoration: none; cursor: pointer; font-size: 1rem; }
+.btn:disabled { background: #9ca3af; cursor: not-allowed; }
+.row { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+.form { display: flex; flex-direction: column; gap: 10px; max-width: 520px; }
+input, textarea { padding: 8px; border: 1px solid #cbd5e1; border-radius: 6px; font: inherit; }
+fieldset { border: 1px solid #cbd5e1; border-radius: 8px; }
+.opt { display: block; margin: 4px 0; }
+.error { color: #dc2626; font-size: .9rem; }
+.tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+.tab { padding: 6px 14px; border-radius: 20px; background: #e2e8f0; color: #1f2937; text-decoration: none; }
+.tab.active { background: #2563eb; color: #fff; }
+.bar { height: 14px; background: #e2e8f0; border-radius: 8px; overflow: hidden; }
+.fill { height: 100%; background: #16a34a; transition: width .3s; }
+.details { line-height: 1.8; }
+.certificate { text-align: center; border: 6px double #b45309; background: #fffbeb; padding: 32px 16px; border-radius: 12px; }
+@media (max-width: 600px) { .header { padding: 10px 12px; } .container { margin: 12px auto; } }
