@@ -1,12 +1,27 @@
-
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EduLearn</title>
+    <meta name="description" content="EduLearn - High Performance E-Learning Web Application with offline PWA support and interactive courses." />
+    <meta name="theme-color" content="#4f46e5" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    
+    <!-- PWA Manifest & Icons -->
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    
+    <title>EduLearn - E-Learning Platform</title>
   </head>
   <body>
+    <!-- Accessibility: Skip to main content for screen readers and keyboard users -->
+    <a href="#main-content" class="skip-to-content" style="position: absolute; left: -9999px; z-index: 9999; padding: 8px 16px; background: #4f46e5; color: white; border-radius: 4px; text-decoration: none;">
+      Skip to main content
+    </a>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
